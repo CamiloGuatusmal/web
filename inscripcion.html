@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo de Registro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+     <header class="top-banner">
+    <div class="brand-logo">
+      <img src="C:\Users\mayit\Downloads\Cristian Guatusmal 02250131060_2\Cristian Guatusmal 02250131060\images\foto facebboook.webp" alt="Facebook" width="80">
+    </div>
+    <h1 class="title">Formulario de Inscripción</h1>
+  </header>
+    
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <label for="primer_nombre">Primer Nombre:</label>
+        <input type="text" id="primer_nombre" name="primer_nombre" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" title="Solo se permiten letras y espacios" required><br><br>
+        
+        <label for="segundo_nombre">Segundo Nombre:</label>
+        <input type="text" id="segundo_nombre" name="segundo_nombre" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" title="Solo se permiten letras y espacios"><br><br>
+        
+        <label for="primer_apellido">Primer Apellido:</label>
+        <input type="text" id="primer_apellido" name="primer_apellido" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" title="Solo se permiten letras y espacios" required><br><br>
+        
+        <label for="segundo_apellido">Segundo Apellido:</label>
+        <input type="text" id="segundo_apellido" name="segundo_apellido" pattern="[A-Za-záéíóúÁÉÍÓÚ\s]+" title="Solo se permiten letras y espacios"><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="celular">Número de Celular:</label>
+        <input type="text" id="celular" name="celular" pattern="[0-9]{10}" title="Debe ingresar 10 dígitos numéricos" required><br><br>
+
+        <label for="foto">Subir Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*"><br><br>
+
+        <label for="edad">Edad (de 1 a 100):</label>
+<input type="number" id="edad" name="edad" min="1" max="100" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="relacion">Relación con el Usuario:</label>
+        <select id="relacion" name="relacion" required>
+            <option value="padre">Padre</option>
+            <option value="madre">Madre</option>
+            <option value="hermano">Hermano</option>
+            <option value="hermana">Hermana</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+      
+        <label for="interes">Interés:</label>
+        <select id="interes" name="interes" required>
+            <option value="deportes">Deportes</option>
+            <option value="lectura">Lectura</option>
+        </select><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
